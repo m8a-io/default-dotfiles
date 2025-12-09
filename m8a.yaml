@@ -1,0 +1,4 @@
+version: "v1"
+type: "dotfiles"
+# Optional: defaults to ./install.sh if omitted
+install: "./install.sh"

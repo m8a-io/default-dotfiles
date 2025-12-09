@@ -1,0 +1,6 @@
+.DS_Store
+*.bak
+*.swp
+*.log
+m8a
+m8a.yaml.old

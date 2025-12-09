@@ -1,0 +1,52 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
+
+[package]
+disabled = true
+
+[git_branch]
+symbol = "🌱 "
+truncation_length = 10
+truncation_symbol = ""
+style = "bold purple"
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = "🔖 "
+
+[git_state]
+format = '[$state( $progress_current of $progress_total)]($style) '
+cherry_pick = "[🍒 PICKING](bold red)"
+rebase = "[REBASING](bold red)"
+merge = "[MERGING](bold red)"
+revert = "[REVERTING](bold red)"
+bisect = "[BISECTING](bold red)"
+am = "[AM](bold red)"
+am_or_rebase = "[AM/REBASE](bold red)"
+style = "bold yellow"
+
+[git_status]
+conflicted = "🏳"
+ahead = "🏎💨"
+behind = "😰"
+diverged = "😵"
+up_to_date = "✓"
+untracked = "🤷"
+stashed = "📦"
+modified = "📝"
+staged = "[++($count)](green)"
+renamed = "👅"
+deleted = "🗑"
+
+[aws]
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = "bold yellow"
+symbol = "🅰 "
+
+[nodejs]
+format = 'via [node $version](bold green) '
