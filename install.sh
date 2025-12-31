@@ -41,9 +41,10 @@ else
 fi
 
 # --- 3. Starship ---
-if ! [ -x "$(command -v starship)" ]; then
+if ! command -v starship > /dev/null; then
     echo ">> Installing Starship Prompt..."
-    sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- -y
+    mkdir -p "$HOME/.local/bin"
+    sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- -y -b "$HOME/.local/bin"
 else
     echo ">> Starship is already installed."
 fi
